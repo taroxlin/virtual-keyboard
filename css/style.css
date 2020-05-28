@@ -1,0 +1,66 @@
+:root{
+    --func-button-color: rgba(0,0,0,0.9);
+    --norm-button-color: rgba(0,0,0,0.6);
+}
+
+
+.keyboard-board{
+    display: flex;
+    background-color: gray;
+    flex-direction: column;
+    width: 800px;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.keyboard-row{
+    display: flex;
+}
+.textarea-style{
+    width: 710px;
+    height: 140px;
+}
+.KeyButton{
+    background-color: var(--norm-button-color);
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    user-select: none;
+}
+.Space, .ShiftLeft, .ControlLeft, .ControlRight,
+.AltLeft, .AltRight, .BackSpace, .ShiftRight,
+.Enter, .Capslock, .Tab, .Delete, .ArrowLeft, 
+.ArrowRight, .ArrowUp, .ArrowDown, .MetaLeft{
+    background-color: var(--func-button-color);
+
+}
+.actived {
+    background-color: green;
+    border-radius: 15px;
+}
+
+.Space{
+flex-grow:6;
+ }
+
+.ShiftLeft,  .ControlLeft, .ControlRight, .AltLeft, .AltRight, .BackSpace{
+flex-grow:1;
+}
+.ShiftRight{
+    flex-grow:0.93;
+}
+.Enter,.Capslock,.Tab,.Delete{
+    flex-grow:2;
+}
+
+.Backquote{
+    flex-grow: 0.25;
+}
